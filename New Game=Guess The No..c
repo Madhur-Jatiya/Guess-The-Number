@@ -14,16 +14,16 @@
 		printf("Guess the Number between 1-1000??\n");
 		scanf("%d",&guess);
 		
-		if(number<guess)
-		{
-			printf("Your No. is Big. Plz enter small No.");
-		}
-		
-		else if(number>guess)
+		if(number>guess)
 		{
 			printf("Your No. is small. Plz enter Big No.");
 		}
-		
+
+		else if(number<guess)
+		{
+			printf("Your No. is Big. Plz enter small No.");
+		}
+			
 		else
 		{
 			printf("Congrats you guess correct number in %d attempts",attempts);
